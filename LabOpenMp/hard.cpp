@@ -119,7 +119,7 @@ int main(int argc, char* argv[])
 #endif
 	}
 
-	/*noexcept_reader reader;
+	noexcept_reader reader;
 	unwrap_or_print_error(reader.open(argv[2]));
 	noexcept_writer writer;
 	unwrap_or_print_error(writer.open(argv[3]));
@@ -142,18 +142,5 @@ int main(int argc, char* argv[])
 		cout << max_levels[i];
 	}
 	cout << '\n';
-	return 0;*/
-
-	int cnt = 0;
-#pragma omp parallel for collapse(2)
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; j < 10; j++) {
-#pragma omp critical
-				{
-					if (j > i)
-						cnt++;
-				}
-			}
-		}
-	cout << cnt;
+	return 0;
 }
