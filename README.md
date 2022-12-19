@@ -4,17 +4,17 @@
         
 ### Compile failed (build log):
 ```
-D:\a\spbsu-comp-arch22-lab4-Mell0r\spbsu-comp-arch22-lab4-Mell0r\LabOpenMp\src\bit_io.cpp:1:10: fatal error: 'bit_io.hpp' file not found
-#include "bit_io.hpp"
+D:\a\spbsu-comp-arch22-lab4-Mell0r\spbsu-comp-arch22-lab4-Mell0r\LabOpenMp\bit_io.cpp:6:22: warning: function previously declared with an explicit exception specification redeclared with an implicit exception specification [-Wimplicit-exception-spec-mismatch]
+    noexcept_stream::~noexcept_stream() {
+                     ^
+D:\a\spbsu-comp-arch22-lab4-Mell0r\spbsu-comp-arch22-lab4-Mell0r\LabOpenMp/bit_io.hpp:19:17: note: previous declaration is here
+        virtual ~noexcept_stream() noexcept;
+                ^
+1 warning generated.
+D:\a\spbsu-comp-arch22-lab4-Mell0r\spbsu-comp-arch22-lab4-Mell0r\LabOpenMp\hard.cpp:7:10: warning: non-portable path to file '"bit_io.hpp"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "bit_IO.hpp"
          ^~~~~~~~~~~~
-1 error generated.
-D:\a\spbsu-comp-arch22-lab4-Mell0r\spbsu-comp-arch22-lab4-Mell0r\LabOpenMp\src\hard.cpp:6:10: fatal error: 'utility.hpp' file not found
-#include "utility.hpp"
-         ^~~~~~~~~~~~~
-1 error generated.
-D:\a\spbsu-comp-arch22-lab4-Mell0r\spbsu-comp-arch22-lab4-Mell0r\LabOpenMp\src\max_levels_calculators.cpp:4:10: fatal error: 'max_levels_calculators.hpp' file not found
-#include "max_levels_calculators.hpp"
-         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1 error generated.
+         "bit_io.hpp"
+1 warning generated.
 
 ```
