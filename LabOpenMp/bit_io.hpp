@@ -4,6 +4,7 @@
 #include <vector>
 #include <fstream>
 #include <stdint.h>
+#include <iostream>
 
 #include "utility.hpp"
 
@@ -16,7 +17,7 @@ namespace simple_io {
     protected:
     public:
         std::fstream stream;
-        virtual ~noexcept_stream() noexcept;
+        virtual ~noexcept_stream();
         virtual maybe_error open(const string& filename) noexcept = 0;
     };
 
