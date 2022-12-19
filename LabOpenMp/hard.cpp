@@ -4,7 +4,7 @@
 #include <omp.h>
 
 #include "utility.hpp"
-#include "bit_IO.hpp"
+#include "simple_io.hpp"
 #include "max_levels_calculators.hpp"
 
 using std::cerr;
